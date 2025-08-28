@@ -1,4 +1,4 @@
-import Button from "../components/ui/Button";
+import { Link } from "react-router-dom"; // Add this import
 
 const RegisterForm = () => {
   return (
@@ -75,9 +75,17 @@ const RegisterForm = () => {
           />
         </div>
 
-        <Button type="submit" size="md" className="w-full mt-4">
+        <button className="btn btn-primary w-full mt-2">
           Register
-        </Button>
+        </button>
+
+        {/* Already have an account */}
+        <p className="text-sm text-center text-slate-600 mt-4">
+          Already have an account?{" "}
+          <Link to="/login" className="text-blue-500 hover:underline">
+            Login
+          </Link>
+        </p>
       </form>
     </div>
   );

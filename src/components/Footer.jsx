@@ -1,4 +1,4 @@
-import Button from "./ui/Button";
+
 
 const Footer = () => {
   return (
@@ -112,7 +112,7 @@ const Footer = () => {
               placeholder="Your email"
               className="w-full px-3 py-2 rounded-lg text-slate-800 focus:outline-none border border-slate-300"
             />
-            <Button>Subscribe</Button>
+            <button className="btn btn-primary">Subscribe</button>
           </div>
         </div>
       </div>
